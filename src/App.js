@@ -10,7 +10,7 @@ function App() {
       className="App"
       style={{ backgroundColor: theme === "light" ? "white" : "black" }}
     >
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" Component={ProductListing} />
         </Routes>
